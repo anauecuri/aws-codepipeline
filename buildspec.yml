@@ -11,6 +11,8 @@ phases:
   build:
     commands:
       - ng build --prod
+    finally:
+      - echo This is the finally block execution!
 artifacts:
   files:
     - 'dist/my-angular-project/**/*'
